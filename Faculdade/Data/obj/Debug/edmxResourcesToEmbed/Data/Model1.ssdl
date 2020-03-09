@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FaculdadeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ALUNO">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="COD_INSCRICAO" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ANIVERSARIO" Type="datetime" Nullable="false" />
+    <Property Name="COD_INSCRICAO" Type="int" Nullable="false" />
+    <Property Name="ID_PROFESSOR" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CURSO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DISCIPLINA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ID_CURSO" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NOTA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_ALUNO" Type="int" Nullable="false" />
+    <Property Name="ID_COD_INSCRICAO" Type="int" Nullable="false" />
+    <Property Name="ID_PROFESSOR" Type="int" Nullable="false" />
+    <Property Name="NOTA" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROFESSOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ANIVERSARIO" Type="datetime" Nullable="false" />
+    <Property Name="SALARIO" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ID_DISCIPLINA" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__ALUNO__ID_PROFES__398D8EEE">
+    <End Role="PROFESSOR" Type="Self.PROFESSOR" Multiplicity="1" />
+    <End Role="ALUNO" Type="Self.ALUNO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROFESSOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ALUNO">
+        <PropertyRef Name="ID_PROFESSOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DISCIPLIN__ID_CU__33D4B598">
+    <End Role="CURSO" Type="Self.CURSO" Multiplicity="1" />
+    <End Role="DISCIPLINA" Type="Self.DISCIPLINA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CURSO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DISCIPLINA">
+        <PropertyRef Name="ID_CURSO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NOTA__3C69FB99">
+    <End Role="ALUNO" Type="Self.ALUNO" Multiplicity="1" />
+    <End Role="NOTA" Type="Self.NOTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ALUNO">
+        <PropertyRef Name="ID" />
+        <PropertyRef Name="COD_INSCRICAO" />
+      </Principal>
+      <Dependent Role="NOTA">
+        <PropertyRef Name="ID_ALUNO" />
+        <PropertyRef Name="ID_COD_INSCRICAO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NOTA__ID_PROFESS__3D5E1FD2">
+    <End Role="PROFESSOR" Type="Self.PROFESSOR" Multiplicity="1" />
+    <End Role="NOTA" Type="Self.NOTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROFESSOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="NOTA">
+        <PropertyRef Name="ID_PROFESSOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PROFESSOR__ID_DI__36B12243">
+    <End Role="DISCIPLINA" Type="Self.DISCIPLINA" Multiplicity="1" />
+    <End Role="PROFESSOR" Type="Self.PROFESSOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DISCIPLINA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PROFESSOR">
+        <PropertyRef Name="ID_DISCIPLINA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FaculdadeModelStoreContainer">
+    <EntitySet Name="ALUNO" EntityType="Self.ALUNO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CURSO" EntityType="Self.CURSO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DISCIPLINA" EntityType="Self.DISCIPLINA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NOTA" EntityType="Self.NOTA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROFESSOR" EntityType="Self.PROFESSOR" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__ALUNO__ID_PROFES__398D8EEE" Association="Self.FK__ALUNO__ID_PROFES__398D8EEE">
+      <End Role="PROFESSOR" EntitySet="PROFESSOR" />
+      <End Role="ALUNO" EntitySet="ALUNO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DISCIPLIN__ID_CU__33D4B598" Association="Self.FK__DISCIPLIN__ID_CU__33D4B598">
+      <End Role="CURSO" EntitySet="CURSO" />
+      <End Role="DISCIPLINA" EntitySet="DISCIPLINA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NOTA__3C69FB99" Association="Self.FK__NOTA__3C69FB99">
+      <End Role="ALUNO" EntitySet="ALUNO" />
+      <End Role="NOTA" EntitySet="NOTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NOTA__ID_PROFESS__3D5E1FD2" Association="Self.FK__NOTA__ID_PROFESS__3D5E1FD2">
+      <End Role="PROFESSOR" EntitySet="PROFESSOR" />
+      <End Role="NOTA" EntitySet="NOTA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PROFESSOR__ID_DI__36B12243" Association="Self.FK__PROFESSOR__ID_DI__36B12243">
+      <End Role="DISCIPLINA" EntitySet="DISCIPLINA" />
+      <End Role="PROFESSOR" EntitySet="PROFESSOR" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

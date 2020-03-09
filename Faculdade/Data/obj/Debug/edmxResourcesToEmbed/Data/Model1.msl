@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FaculdadeModelStoreContainer" CdmEntityContainer="FaculdadeEntities">
+    <EntitySetMapping Name="ALUNOes">
+      <EntityTypeMapping TypeName="FaculdadeModel.ALUNO">
+        <MappingFragment StoreEntitySet="ALUNO">
+          <ScalarProperty Name="ID_PROFESSOR" ColumnName="ID_PROFESSOR" />
+          <ScalarProperty Name="COD_INSCRICAO" ColumnName="COD_INSCRICAO" />
+          <ScalarProperty Name="ANIVERSARIO" ColumnName="ANIVERSARIO" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CURSOes">
+      <EntityTypeMapping TypeName="FaculdadeModel.CURSO">
+        <MappingFragment StoreEntitySet="CURSO">
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DISCIPLINAs">
+      <EntityTypeMapping TypeName="FaculdadeModel.DISCIPLINA">
+        <MappingFragment StoreEntitySet="DISCIPLINA">
+          <ScalarProperty Name="ID_CURSO" ColumnName="ID_CURSO" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NOTAs">
+      <EntityTypeMapping TypeName="FaculdadeModel.NOTA">
+        <MappingFragment StoreEntitySet="NOTA">
+          <ScalarProperty Name="NOTA1" ColumnName="NOTA" />
+          <ScalarProperty Name="ID_PROFESSOR" ColumnName="ID_PROFESSOR" />
+          <ScalarProperty Name="ID_COD_INSCRICAO" ColumnName="ID_COD_INSCRICAO" />
+          <ScalarProperty Name="ID_ALUNO" ColumnName="ID_ALUNO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROFESSORs">
+      <EntityTypeMapping TypeName="FaculdadeModel.PROFESSOR">
+        <MappingFragment StoreEntitySet="PROFESSOR">
+          <ScalarProperty Name="ID_DISCIPLINA" ColumnName="ID_DISCIPLINA" />
+          <ScalarProperty Name="SALARIO" ColumnName="SALARIO" />
+          <ScalarProperty Name="ANIVERSARIO" ColumnName="ANIVERSARIO" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,31 @@
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\Data.dll.config
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\Data.dll
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\Data.pdb
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\EntityFramework.dll
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\Modelos.dll
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\Modelos.pdb
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\EntityFramework.xml
+C:\Users\natal\source\repos\Faculdade\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\natal\source\repos\Faculdade\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\natal\source\repos\Faculdade\Data\obj\Debug\Data.Migrations.initial.resources
+C:\Users\natal\source\repos\Faculdade\Data\obj\Debug\Data.csproj.GenerateResource.cache
+C:\Users\natal\source\repos\Faculdade\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\natal\source\repos\Faculdade\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\natal\source\repos\Faculdade\Data\obj\Debug\Data.dll
+C:\Users\natal\source\repos\Faculdade\Data\obj\Debug\Data.pdb
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\Data.dll.config
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\Data.dll
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\Data.pdb
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\EntityFramework.dll
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\Modelos.dll
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\Modelos.pdb
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\EntityFramework.xml
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\obj\Debug\Data.Migrations.initial.resources
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\obj\Debug\Data.csproj.GenerateResource.cache
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\obj\Debug\Data.dll
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Data\obj\Debug\Data.pdb

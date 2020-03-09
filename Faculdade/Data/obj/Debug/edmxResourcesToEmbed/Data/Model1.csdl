@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FaculdadeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="FaculdadeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ALUNOes" EntityType="FaculdadeModel.ALUNO" />
+    <EntitySet Name="CURSOes" EntityType="FaculdadeModel.CURSO" />
+    <EntitySet Name="DISCIPLINAs" EntityType="FaculdadeModel.DISCIPLINA" />
+    <EntitySet Name="NOTAs" EntityType="FaculdadeModel.NOTA" />
+    <EntitySet Name="PROFESSORs" EntityType="FaculdadeModel.PROFESSOR" />
+    <AssociationSet Name="FK__ALUNO__ID_PROFES__398D8EEE" Association="FaculdadeModel.FK__ALUNO__ID_PROFES__398D8EEE">
+      <End Role="PROFESSOR" EntitySet="PROFESSORs" />
+      <End Role="ALUNO" EntitySet="ALUNOes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NOTA__3C69FB99" Association="FaculdadeModel.FK__NOTA__3C69FB99">
+      <End Role="ALUNO" EntitySet="ALUNOes" />
+      <End Role="NOTA" EntitySet="NOTAs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DISCIPLIN__ID_CU__33D4B598" Association="FaculdadeModel.FK__DISCIPLIN__ID_CU__33D4B598">
+      <End Role="CURSO" EntitySet="CURSOes" />
+      <End Role="DISCIPLINA" EntitySet="DISCIPLINAs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PROFESSOR__ID_DI__36B12243" Association="FaculdadeModel.FK__PROFESSOR__ID_DI__36B12243">
+      <End Role="DISCIPLINA" EntitySet="DISCIPLINAs" />
+      <End Role="PROFESSOR" EntitySet="PROFESSORs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NOTA__ID_PROFESS__3D5E1FD2" Association="FaculdadeModel.FK__NOTA__ID_PROFESS__3D5E1FD2">
+      <End Role="PROFESSOR" EntitySet="PROFESSORs" />
+      <End Role="NOTA" EntitySet="NOTAs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ALUNO">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="COD_INSCRICAO" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ANIVERSARIO" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="COD_INSCRICAO" Type="Int32" Nullable="false" />
+    <Property Name="ID_PROFESSOR" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PROFESSOR" Relationship="FaculdadeModel.FK__ALUNO__ID_PROFES__398D8EEE" FromRole="ALUNO" ToRole="PROFESSOR" />
+    <NavigationProperty Name="NOTAs" Relationship="FaculdadeModel.FK__NOTA__3C69FB99" FromRole="ALUNO" ToRole="NOTA" />
+  </EntityType>
+  <EntityType Name="CURSO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DISCIPLINAs" Relationship="FaculdadeModel.FK__DISCIPLIN__ID_CU__33D4B598" FromRole="CURSO" ToRole="DISCIPLINA" />
+  </EntityType>
+  <EntityType Name="DISCIPLINA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ID_CURSO" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CURSO" Relationship="FaculdadeModel.FK__DISCIPLIN__ID_CU__33D4B598" FromRole="DISCIPLINA" ToRole="CURSO" />
+    <NavigationProperty Name="PROFESSORs" Relationship="FaculdadeModel.FK__PROFESSOR__ID_DI__36B12243" FromRole="DISCIPLINA" ToRole="PROFESSOR" />
+  </EntityType>
+  <EntityType Name="NOTA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_ALUNO" Type="Int32" Nullable="false" />
+    <Property Name="ID_COD_INSCRICAO" Type="Int32" Nullable="false" />
+    <Property Name="ID_PROFESSOR" Type="Int32" Nullable="false" />
+    <Property Name="NOTA1" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="ALUNO" Relationship="FaculdadeModel.FK__NOTA__3C69FB99" FromRole="NOTA" ToRole="ALUNO" />
+    <NavigationProperty Name="PROFESSOR" Relationship="FaculdadeModel.FK__NOTA__ID_PROFESS__3D5E1FD2" FromRole="NOTA" ToRole="PROFESSOR" />
+  </EntityType>
+  <EntityType Name="PROFESSOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ANIVERSARIO" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SALARIO" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ID_DISCIPLINA" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ALUNOes" Relationship="FaculdadeModel.FK__ALUNO__ID_PROFES__398D8EEE" FromRole="PROFESSOR" ToRole="ALUNO" />
+    <NavigationProperty Name="DISCIPLINA" Relationship="FaculdadeModel.FK__PROFESSOR__ID_DI__36B12243" FromRole="PROFESSOR" ToRole="DISCIPLINA" />
+    <NavigationProperty Name="NOTAs" Relationship="FaculdadeModel.FK__NOTA__ID_PROFESS__3D5E1FD2" FromRole="PROFESSOR" ToRole="NOTA" />
+  </EntityType>
+  <Association Name="FK__ALUNO__ID_PROFES__398D8EEE">
+    <End Type="FaculdadeModel.PROFESSOR" Role="PROFESSOR" Multiplicity="1" />
+    <End Type="FaculdadeModel.ALUNO" Role="ALUNO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROFESSOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ALUNO">
+        <PropertyRef Name="ID_PROFESSOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NOTA__3C69FB99">
+    <End Type="FaculdadeModel.ALUNO" Role="ALUNO" Multiplicity="1" />
+    <End Type="FaculdadeModel.NOTA" Role="NOTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ALUNO">
+        <PropertyRef Name="ID" />
+        <PropertyRef Name="COD_INSCRICAO" />
+      </Principal>
+      <Dependent Role="NOTA">
+        <PropertyRef Name="ID_ALUNO" />
+        <PropertyRef Name="ID_COD_INSCRICAO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DISCIPLIN__ID_CU__33D4B598">
+    <End Type="FaculdadeModel.CURSO" Role="CURSO" Multiplicity="1" />
+    <End Type="FaculdadeModel.DISCIPLINA" Role="DISCIPLINA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CURSO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DISCIPLINA">
+        <PropertyRef Name="ID_CURSO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PROFESSOR__ID_DI__36B12243">
+    <End Type="FaculdadeModel.DISCIPLINA" Role="DISCIPLINA" Multiplicity="1" />
+    <End Type="FaculdadeModel.PROFESSOR" Role="PROFESSOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DISCIPLINA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PROFESSOR">
+        <PropertyRef Name="ID_DISCIPLINA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NOTA__ID_PROFESS__3D5E1FD2">
+    <End Type="FaculdadeModel.PROFESSOR" Role="PROFESSOR" Multiplicity="1" />
+    <End Type="FaculdadeModel.NOTA" Role="NOTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROFESSOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="NOTA">
+        <PropertyRef Name="ID_PROFESSOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

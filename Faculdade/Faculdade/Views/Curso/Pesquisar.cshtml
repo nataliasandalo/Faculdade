@@ -1,0 +1,23 @@
+﻿@Styles.Render("~/Content/css");
+@Scripts.Render("~/bundles/modernizr");
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/angular");
+<script src="~/Scripts/Servicos/CursoFaculdade.js"></script>
+@{
+    ViewBag.Title = "Pesquisar";
+}
+
+<h2>Pesquisar</h2>
+
+<body ng-app="MyApp" ng-controller="CursoController">
+
+    <div>
+        {{Mensagem}}
+    </div>
+
+    <div>
+        {{pesquisar}}
+    </div>
+
+</body>
