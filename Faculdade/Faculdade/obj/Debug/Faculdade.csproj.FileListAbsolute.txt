@@ -189,6 +189,7 @@ C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\Autofa
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\EntityFramework.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\EntityFramework.SqlServer.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\Newtonsoft.Json.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\System.Web.Helpers.xml
@@ -198,7 +199,6 @@ C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\System
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\System.Web.WebPages.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\System.Web.WebPages.Deployment.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\System.Web.WebPages.Razor.xml
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\Newtonsoft.Json.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\Antlr3.Runtime.pdb
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Faculdade\obj\Debug\Faculdade.csprojAssemblyReference.cache

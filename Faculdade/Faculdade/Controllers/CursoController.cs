@@ -19,16 +19,7 @@ namespace Faculdade.Controllers
             return View();
         }
 
-        //public ActionResult Pesquisar()
-        //{
-        //    var pesquisar = new Modelos.Model.CursoFaculdade();
-        //    var post = _curso.Pesquisar(pesquisar);
-
-        //    return View(post);
-        //}
-
-        [HttpGet]
-        public ActionResult Pesquisar()
+        public JsonResult Pesquisar()
         {
             var pesquisar = new Modelos.Model.CursoFaculdade();
             var data = _curso.Pesquisar(pesquisar);
