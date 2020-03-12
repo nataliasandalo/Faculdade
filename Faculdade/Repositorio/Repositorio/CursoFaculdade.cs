@@ -26,7 +26,8 @@ namespace Repositorio.Repositorio
         }        
         public Modelos.Model.CursoFaculdade Guardar(Modelos.Model.CursoFaculdade t)
         {
-            this.context.CursoFaculdade.Add(t);            
+            this.context.CursoFaculdade.Add(t);
+            this.context.SaveChanges();
             return t;
         }
         public Modelos.Model.CursoFaculdade Atualizar(Modelos.Model.CursoFaculdade t)

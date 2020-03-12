@@ -7,3 +7,7 @@ C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Modelos\bin\Debug\Mo
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Modelos\bin\Debug\Modelos.pdb
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Modelos\obj\Debug\Modelos.dll
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Modelos\obj\Debug\Modelos.pdb
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\bin\Debug\Modelos.dll
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\bin\Debug\Modelos.pdb
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\obj\Debug\Modelos.dll
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\obj\Debug\Modelos.pdb

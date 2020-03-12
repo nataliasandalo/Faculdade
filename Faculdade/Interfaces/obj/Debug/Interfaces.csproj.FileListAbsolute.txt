@@ -15,3 +15,11 @@ C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Interfaces\obj\Debug
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\bin\Debug\Modelos.dll
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\bin\Debug\Modelos.pdb
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Interfaces\obj\Debug\Interfaces.pdb

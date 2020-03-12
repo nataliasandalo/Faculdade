@@ -4,9 +4,6 @@
 
     app.controller('CursoController', ['$scope', '$http', '$window', '$location', function ($scope, $http, $window, $location) {
         
-        $scope.Mensagem = "TESTE ENTROU NO JS";
-        $scope.pesquisateste = "só no pesquisar";
-
         $scope.pesquisarButton = function () {
 
             //window.location.href = '/Curso/Pesquisar';
@@ -50,6 +47,23 @@
                 return;
             }
 
+        };
+
+        $scope.Adicionar = function (curso) {
+
+            $http.post('/Curso/AdicionarCurso', curso).then(
+                function (successResponse) {
+
+                    window.location.href = '/Curso/Index';
+                },
+                function (errorResponse) {
+                    // handle errors here
+                });
+        };
+
+        $scope.GotoAdicionar = function () {
+
+            window.location.href = '/Curso/Adicionar';
         };
 
     }]);
