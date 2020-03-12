@@ -21,8 +21,9 @@ namespace Repositorio.Repositorio
         }
         public void Deletar(Modelos.Model.CursoFaculdade t)
         {
-            Modelos.Model.CursoFaculdade cursoFaculdade = this.context.CursoFaculdade.Find(t.Id);
+            Modelos.Model.CursoFaculdade cursoFaculdade = this.context.CursoFaculdade.Where(p => p.Id == t.Id).FirstOrDefault();
             this.context.CursoFaculdade.Remove(cursoFaculdade);
+            this.context.SaveChanges();
         }        
         public Modelos.Model.CursoFaculdade Guardar(Modelos.Model.CursoFaculdade t)
         {

@@ -49,6 +49,11 @@
 
         };
 
+        $scope.GotoAdicionar = function () {
+
+            window.location.href = '/Curso/Adicionar';
+        };
+
         $scope.Adicionar = function (curso) {
 
             $http.post('/Curso/AdicionarCurso', curso).then(
@@ -61,10 +66,24 @@
                 });
         };
 
-        $scope.GotoAdicionar = function () {
+        $scope.Excluir = function (curso) {
 
-            window.location.href = '/Curso/Adicionar';
+            if ($window.confirm("Tem certeza que deseja excluir este curso?")) {
+
+                $http({
+                    method: "POST",
+                    url: "/Curso/Excluir",
+                    data: curso,
+                    dataType: 'json',
+                    headers: { "Content-Type": "application/json" }
+                }).then(function successCallback(response) {
+
+                        window.location.href = '/Curso/Index';
+                }, function errorCallback(response) {
+
+                });
+            }
         };
-
+        
     }]);
 })();

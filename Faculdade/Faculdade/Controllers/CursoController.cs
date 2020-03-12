@@ -38,5 +38,12 @@ namespace Faculdade.Controllers
 
             return Json(data, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult Excluir(CursoFaculdade curso)
+        {
+            _curso.Deletar(curso);
+
+            return View();
+        }
     }
 }
