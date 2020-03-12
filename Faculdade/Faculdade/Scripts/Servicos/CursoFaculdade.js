@@ -66,6 +66,21 @@
                 });
         };
 
+        $scope.Atualizar = function (curso) {
+
+            curso.Nome = angular.element(document.getElementById('txtNome' + curso.Id)).val();
+
+            $http.post('/Curso/Atualizar', curso).then(
+
+                function (successResponse) {
+
+                    window.location.href = '/Curso/Index';
+                },
+                function (errorResponse) {
+                    // handle errors here
+                });
+        };
+
         $scope.Excluir = function (curso) {
 
             if ($window.confirm("Tem certeza que deseja excluir este curso?")) {

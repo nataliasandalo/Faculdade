@@ -34,6 +34,7 @@ namespace Repositorio.Repositorio
         public Modelos.Model.CursoFaculdade Atualizar(Modelos.Model.CursoFaculdade t)
         {
             this.context.Entry(t).State = EntityState.Modified;
+            this.context.SaveChanges();
             return t;
         }
         public ICollection<Modelos.Model.CursoFaculdade> Pesquisar(Modelos.Model.CursoFaculdade t)

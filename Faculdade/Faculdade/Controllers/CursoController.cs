@@ -32,6 +32,13 @@ namespace Faculdade.Controllers
             return View();
         }
 
+        public JsonResult Atualizar(CursoFaculdade curso)
+        {
+            var data = _curso.Atualizar(curso);
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+
         public JsonResult AdicionarCurso(CursoFaculdade curso)
         {
             var data = _curso.Guardar(curso);
