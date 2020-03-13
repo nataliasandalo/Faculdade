@@ -20,21 +20,32 @@ namespace Repositorio.Repositorio
         public Modelos.Model.DisciplinaFaculdade Atualizar(Modelos.Model.DisciplinaFaculdade t)
         {
             this.context.Entry(t).State = EntityState.Modified;
+            this.context.SaveChanges();
             return t;
         }
         public void Deletar(Modelos.Model.DisciplinaFaculdade t)
         {
-            Modelos.Model.DisciplinaFaculdade disciplinaFaculdade = this.context.DisciplinaFaculdade.Find(t.Id);
+            Modelos.Model.DisciplinaFaculdade disciplinaFaculdade = this.context.DisciplinaFaculdade.Where(p => p.Id == t.Id).FirstOrDefault(); ;
             this.context.DisciplinaFaculdade.Remove(disciplinaFaculdade);
+            this.context.SaveChanges();
         }        
         public Modelos.Model.DisciplinaFaculdade Guardar(Modelos.Model.DisciplinaFaculdade t)
         {
             this.context.DisciplinaFaculdade.Add(t);
+            this.context.SaveChanges();
             return t;
         }
         public ICollection<Modelos.Model.DisciplinaFaculdade> Pesquisar(Modelos.Model.DisciplinaFaculdade t)
         {
-            return this.context.DisciplinaFaculdade.ToList();
+            var list = this.context.DisciplinaFaculdade.ToList();
+            
+            foreach (var item in list)
+            {
+                item.CursoFaculdade = this.context.CursoFaculdade.Where(p => p.Id == item.CursoFaculdade.Id).FirstOrDefault();
+            }
+
+            var ver = this.context.CursoFaculdade.ToList();
+            return list;
         }
         public void Save()
         {

@@ -1011,6 +1011,10 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\Servicos\NotaFaculdade.js" />
+    <Content Include="Scripts\Servicos\AlunoFaculdade.js" />
+    <Content Include="Scripts\Servicos\ProfessorFaculdade.js" />
+    <Content Include="Scripts\Servicos\DisciplinaFaculdade.js" />
     <Content Include="Scripts\Servicos\CursoFaculdade.js" />
     <Content Include="Scripts\sitemap.xml" />
     <Content Include="Scripts\src\index.js" />
@@ -1117,6 +1121,22 @@
     <Content Include="Views\Curso\Adicionar.cshtml" />
     <Content Include="Views\Curso\Excluir.cshtml" />
     <Content Include="Views\Curso\Atualizar.cshtml" />
+    <Content Include="Views\Disciplina\Index.cshtml" />
+    <Content Include="Views\Disciplina\Adicionar.cshtml" />
+    <Content Include="Views\Disciplina\Atualizar.cshtml" />
+    <Content Include="Views\Disciplina\Excluir.cshtml" />
+    <Content Include="Views\Professor\Adicionar.cshtml" />
+    <Content Include="Views\Professor\Atualizar.cshtml" />
+    <Content Include="Views\Professor\Excluir.cshtml" />
+    <Content Include="Views\Professor\Index.cshtml" />
+    <Content Include="Views\Nota\Adicionar.cshtml" />
+    <Content Include="Views\Nota\Atualizar.cshtml" />
+    <Content Include="Views\Nota\Excluir.cshtml" />
+    <Content Include="Views\Nota\Index.cshtml" />
+    <Content Include="Views\Aluno\Adicionar.cshtml" />
+    <Content Include="Views\Aluno\Atualizar.cshtml" />
+    <Content Include="Views\Aluno\Excluir.cshtml" />
+    <Content Include="Views\Aluno\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

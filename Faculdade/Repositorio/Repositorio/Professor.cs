@@ -20,18 +20,21 @@ namespace Repositorio.Repositorio
         public Modelos.Model.Professor Atualizar(Modelos.Model.Professor t)
         {
             this.context.Entry(t).State = EntityState.Modified;
+            this.context.SaveChanges();
             return t;
         }
 
         public void Deletar(Modelos.Model.Professor t)
         {
-            Modelos.Model.Professor professor = this.context.Professor.Find(t.Id);
+            Modelos.Model.Professor professor = this.context.Professor.Where(p => p.Id == t.Id).FirstOrDefault();
             this.context.Professor.Remove(professor);
+            this.context.SaveChanges();
         }
 
         public Modelos.Model.Professor Guardar(Modelos.Model.Professor t)
         {
             this.context.Professor.Add(t);
+            this.context.SaveChanges();
             return t;
         }
 

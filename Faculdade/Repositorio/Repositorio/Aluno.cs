@@ -20,16 +20,19 @@ namespace Repositorio.Repositorio
         public Modelos.Model.Aluno Atualizar(Modelos.Model.Aluno t)
         {
             this.context.Entry(t).State = EntityState.Modified;
+            this.context.SaveChanges();
             return t;
         }
         public void Deletar(Modelos.Model.Aluno t)
         {
-            Modelos.Model.Aluno aluno = this.context.Aluno.Find(t.Id);
+            Modelos.Model.Aluno aluno = this.context.Aluno.Where(p => p.Id == t.Id).FirstOrDefault();
             this.context.Aluno.Remove(aluno);
+            this.context.SaveChanges();
         }
         public Modelos.Model.Aluno Guardar(Modelos.Model.Aluno t)
         {
             this.context.Aluno.Add(t);
+            this.context.SaveChanges();
             return t;
         }
         public ICollection<Modelos.Model.Aluno> Pesquisar(Modelos.Model.Aluno t)

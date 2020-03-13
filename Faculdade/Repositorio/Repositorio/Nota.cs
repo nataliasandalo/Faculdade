@@ -20,18 +20,21 @@ namespace Repositorio.Repositorio
         public Modelos.Model.Nota Atualizar(Modelos.Model.Nota t)
         {
             this.context.Entry(t).State = EntityState.Modified;
+            this.context.SaveChanges();
             return t;
         }
 
         public void Deletar(Modelos.Model.Nota t)
         {
-            Modelos.Model.Nota nota = this.context.Nota.Find(t.Id);
+            Modelos.Model.Nota nota = this.context.Nota.Where(p => p.Id == t.Id).FirstOrDefault();
             this.context.Nota.Remove(nota);
+            this.context.SaveChanges();
         }
 
         public Modelos.Model.Nota Guardar(Modelos.Model.Nota t)
         {
             this.context.Nota.Add(t);
+            this.context.SaveChanges();
             return t;
         }
 

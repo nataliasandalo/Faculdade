@@ -1,34 +1,3 @@
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\Service.dll.config
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\Service.dll
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\Service.pdb
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\EntityFramework.dll
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\Interfaces.dll
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\Modelos.dll
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\Interfaces.pdb
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\Modelos.pdb
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\EntityFramework.xml
-C:\Users\natal\source\repos\Faculdade\Service\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\natal\source\repos\Faculdade\Service\obj\Debug\Service.csprojAssemblyReference.cache
-C:\Users\natal\source\repos\Faculdade\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
-C:\Users\natal\source\repos\Faculdade\Service\obj\Debug\Service.csproj.CopyComplete
-C:\Users\natal\source\repos\Faculdade\Service\obj\Debug\Service.dll
-C:\Users\natal\source\repos\Faculdade\Service\obj\Debug\Service.pdb
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\Service.dll.config
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\Service.dll
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\Service.pdb
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\EntityFramework.dll
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\Interfaces.dll
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\Modelos.dll
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\Interfaces.pdb
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\Modelos.pdb
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\EntityFramework.xml
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\obj\Debug\Service.csprojAssemblyReference.cache
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\obj\Debug\Service.csproj.CopyComplete
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\obj\Debug\Service.dll
-C:\Users\nsandalo\OneDrive - everis\Desktop\Teste\Faculdade\Service\obj\Debug\Service.pdb
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Service\bin\Debug\Service.dll.config
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Service\bin\Debug\Service.dll
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Service\bin\Debug\Service.pdb

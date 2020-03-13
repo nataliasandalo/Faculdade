@@ -83,7 +83,7 @@
 
         $scope.Excluir = function (curso) {
 
-            if ($window.confirm("Tem certeza que deseja excluir este curso?")) {
+            if ($window.confirm("Tem certeza que deseja excluir este Curso?")) {
 
                 $http({
                     method: "POST",

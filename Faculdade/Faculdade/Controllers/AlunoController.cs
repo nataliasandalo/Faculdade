@@ -18,5 +18,39 @@ namespace Faculdade.Controllers
         {
             return View();
         }
+
+        public JsonResult Pesquisar()
+        {
+            var pesquisar = new Modelos.Model.Aluno();
+            var data = _aluno.Pesquisar(pesquisar);
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Adicionar()
+        {
+            return View();
+        }
+
+        public JsonResult Atualizar(Aluno aluno)
+        {
+            var data = _aluno.Atualizar(aluno);
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult AdicionarAluno(Aluno aluno)
+        {
+            var data = _aluno.Guardar(aluno);
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Excluir(Aluno aluno)
+        {
+            _aluno.Deletar(aluno);
+
+            return View();
+        }
     }
 }
