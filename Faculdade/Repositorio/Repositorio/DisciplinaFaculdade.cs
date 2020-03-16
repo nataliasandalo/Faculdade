@@ -41,7 +41,7 @@ namespace Repositorio.Repositorio
             
             foreach (var item in list)
             {
-                item.CursoFaculdade = this.context.CursoFaculdade.Where(p => p.Id == item.CursoFaculdade.Id).FirstOrDefault();
+                item.CursoFaculdade = this.context.CursoFaculdade.Where(p => p.Id == item.CursoFaculdadeId).FirstOrDefault();
             }
 
             var ver = this.context.CursoFaculdade.ToList();

@@ -8,8 +8,8 @@ C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\bi
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\bin\Debug\EntityFramework.xml
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.Migrations.Init.resources
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.csproj.GenerateResource.cache
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.dll
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.pdb
-C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.Migrations.Init.resources
-C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Data\obj\Debug\Data.csproj.GenerateResource.cache

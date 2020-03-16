@@ -2,3 +2,4 @@ C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\bin\Debug\Modelos.pdb
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\obj\Debug\Modelos.dll
 C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\obj\Debug\Modelos.pdb
+C:\Users\nsandalo\OneDrive - everis\Documents\GitHub\Faculdade\Faculdade\Modelos\obj\Debug\Modelos.csprojAssemblyReference.cache

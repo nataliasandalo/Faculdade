@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var app = angular.module('MyApp', []);
+    var app = angular.module('MyApp');
 
     app.controller('DisciplinaController', ['$scope', '$http', '$window', '$location', function ($scope, $http, $window, $location) {
 
@@ -13,6 +13,7 @@
                 method: 'GET',
                 dataType: 'json'
             }).then(function (data, status, headers, config) {
+
                 $scope.pesquisarCurso = data.data;
             });
 
@@ -28,16 +29,22 @@
                 dataType: 'json'
             }).then(function (data, status, headers, config) { 
 
-                $scope.pesquisarCurso = data.data.CursoFaculdade;
+                for (var i = 0; i < data.data.length; i++) {
+
+                    var ver = data.data[i];
+                    $scope.pesquisarCurso.push(data.data[i].CursoFaculdade);
+                    $scope.defaultDropValue = data.data[i].CursoFaculdade.Id;
+                }
+                
                 $scope.pesquisar = data.data;
             });
                         
         };
-
+        
         $scope.HiddenBtn = function (event, id) {
 
             var btnPlus = angular.element(document.getElementById('btnPlus' + id));
-
+            
             if (btnPlus[0].hidden === true) {
                 btnPlus[0].hidden = false;
                 return;
@@ -52,14 +59,19 @@
         $scope.EnableDisableTxt = function (event, id) {
 
             var txtNome = angular.element(document.getElementById('txtNome' + id));
+            var selectCurso = angular.element(document.getElementById('selectCurso' + id));
 
-            if (txtNome[0].disabled === true) {
+            if (txtNome[0].disabled === true && selectCurso[0].disabled === true) {
+
                 txtNome[0].disabled = false;
+                selectCurso[0].disabled = false;
                 return;
             }
 
-            if (txtNome[0].disabled === false) {
+            if (txtNome[0].disabled === false && selectCurso[0].disabled === false) {
+
                 txtNome[0].disabled = true;
+                selectCurso[0].disabled = true;
                 return;
             }
 

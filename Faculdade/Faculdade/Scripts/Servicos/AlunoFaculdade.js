@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var app = angular.module('MyApp', []);
+    var app = angular.module('MyApp');
 
     app.controller('AlunoController', ['$scope', '$http', '$window', '$location', function ($scope, $http, $window, $location) {
         
