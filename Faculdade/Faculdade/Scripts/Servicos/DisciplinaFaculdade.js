@@ -13,7 +13,7 @@
                 method: 'GET',
                 dataType: 'json'
             }).then(function (data, status, headers, config) {
-
+                
                 $scope.pesquisarCurso = data.data;
             });
 
@@ -31,9 +31,7 @@
 
                 for (var i = 0; i < data.data.length; i++) {
 
-                    var ver = data.data[i];
                     $scope.pesquisarCurso.push(data.data[i].CursoFaculdade);
-                    $scope.defaultDropValue = data.data[i].CursoFaculdade.Id;
                 }
                 
                 $scope.pesquisar = data.data;
@@ -82,9 +80,9 @@
             window.location.href = '/Disciplina/Adicionar';
         };
 
-        $scope.Adicionar = function (curso) {
+        $scope.Adicionar = function (disciplina) {
 
-            $http.post('/Disciplina/AdicionarDisciplina', curso).then(
+            $http.post('/Disciplina/AdicionarDisciplina', disciplina).then(
                 function (successResponse) {
 
                     window.location.href = '/Disciplina/Index';

@@ -8,9 +8,16 @@
 <div ng-app="MyApp" ng-controller="DisciplinaController">
     <div>
         <label>Nome: </label>
-        <input type="text" ng-model="curso.Nome"/>
+        <input type="text" ng-model="disciplina.Nome"/>
     </div>
     <div>
-        <input type="submit" style="left:90%;" class="btn btn-primary" ng-click="Adicionar(curso)" value="Save" />
+        <label>Curso: </label>
+
+        <select name="selectCurso" ng-model="disciplina.Curso">
+            <option ng-repeat="option in pesquisarCurso" value="{{option.Id}}" selected>{{option.Nome}}</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" style="left:90%;" class="btn btn-primary" ng-click="Adicionar(disciplina)" value="Save" />
     </div>
 </div>

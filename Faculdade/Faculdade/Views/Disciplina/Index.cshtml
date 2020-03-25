@@ -35,7 +35,8 @@
                     <input type="text" style="width:100%" disabled="disabled" id="txtNome{{x.Id}}" value="{{x.Nome}}" />
                 </td>
                 <td>
-                    <select name="selectCurso" id="selectCurso{{x.Id}}" disabled="disabled" ng-init="init($event, x.Id)" ng-model="defaultDropValue" ng-click="pesquisarCursoClick()">
+                    <select name="selectCurso" id="selectCurso{{x.Id}}" disabled="disabled" >
+
                         <option ng-repeat="option in pesquisarCurso" value="{{option.Id}}" selected>{{option.Nome}}</option>
                     </select>
                 </td>
